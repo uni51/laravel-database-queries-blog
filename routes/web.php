@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SampleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/sample', 'SampleController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
